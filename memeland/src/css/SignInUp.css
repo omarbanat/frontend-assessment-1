@@ -1,0 +1,80 @@
+.LogInForm {
+    box-sizing: border-box;
+    width: 720px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 45px 65px;
+    background-color: #ffffff;
+  
+  }
+  .LoginFormBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #b9e7fa;
+    border-radius: 40px;
+  }
+  .LoginFormLeft {
+    width: 50%;
+  }
+ .CreateAccount{
+    text-align: center;
+ }
+  .LogInImage {
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+    line-height: 210px;
+    position: relative;
+    margin-left: 3rem;
+  }
+  .LoginFormRight {
+    line-height: 26px;
+    width: 50%;
+  }
+  .loginFormInputContainer {
+    padding: 0 25px;
+  }
+  .LoginFormTitle {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .LogInSubmit {
+    background-color: #f6b7a0 !important;
+    cursor: pointer;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px !important;
+  }
+  .LogInSubmit:hover {
+    background: #ff3f70;
+  }
+  .LogInEmail {
+    position: relative;
+  }
+  
+  .loginFormInputContainer input {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background: #f2f2f2;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .CreateAccountLink{
+    color: #27487d;
+    position: relative;
+  }
+  .CreateAccountLink:hover {
+    color: #f6b7a0 ;
+  }

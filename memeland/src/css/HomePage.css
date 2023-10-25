@@ -1,0 +1,52 @@
+.HomeTopPage{
+    display: flex;
+    background-color: 
+    #c5ebf8;
+    margin-bottom: 3rem;
+}
+.HomeTopPage-Logo img{
+    width: 100px;
+    height: auto;
+}
+.HomeTopPage-signinup{
+    margin: auto 0;
+    margin-left: auto;
+    margin-right: 2rem;
+    
+}
+.HomeTopPage-signinup h1{
+    font-size: medium;
+}
+.HomeTopPage-signinup h1 a{
+    text-decoration: none;
+   color: #e4a58f;
+}
+.HomeTopPage-signinup h1 a:hover{
+    text-decoration: none;
+    color: red;
+   
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .HomeTopPage-title{
+        margin: auto 0;
+    }
+    .HomeTopPage-title h1{
+     font-size: small;
+      
+    }
+    .HomeTopPage-signinup h1{
+        font-size: small;
+    }
+    .HomeTopPage-signinup{
+       
+    margin-right: 1rem;
+    }
+  }

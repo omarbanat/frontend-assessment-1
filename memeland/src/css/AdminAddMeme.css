@@ -1,0 +1,120 @@
+.AdminContainer {
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f2b9a1 ;
+    height: 46vh;
+
+  }
+
+  .AdminTitle {
+
+    font-size: xx-large;
+    font-weight: bold;
+ 
+  }
+
+  .AdminContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vw;
+  }
+
+  .AdminLeft {
+    flex: 1;
+    text-align: center;
+  }
+
+  .AdminLeft img {
+    max-width: 100%;
+    max-height: 200px;
+  }
+
+  .AdminCaption {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .AdminCaptionInput {
+    text-align: center;
+  }
+
+  .AdminCaptionInput input[type="file"] {
+    margin: 10px 0;
+  }
+
+  .AdminCaptionInput button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .AdminRight {
+    flex: 1;
+  }
+
+  .AdminForm {
+    text-align: center;
+  }
+
+  .AdminFormTitle {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+  }
+
+  .AdminFormTextArea {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+  }
+  .AdminSubmitButton a {
+    
+	background-color:transparent;
+	border-radius:5px;
+	border:1px solid white;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:11px 28px;
+	text-decoration:none;
+}
+.AdminSubmitButton{
+    text-align: left;
+}
+#imageInput{
+    color: transparent
+}
+#imageInput{
+content: 'Add Your Image';
+  color: black;
+  display: inline-block;
+  background: white;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+    
+}
+#imageInput::-webkit-file-upload-button {
+    visibility: hidden;
+  }

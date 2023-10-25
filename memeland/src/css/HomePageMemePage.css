@@ -1,0 +1,14 @@
+.MemePage {
+    margin: 0 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+  }
+
+  @media (max-width: 500px) {
+    .MemePage {
+       
+        margin: 0;
+      }
+  }

@@ -1,0 +1,47 @@
+.AdminTablePage{
+    height:33vh;
+
+    
+}
+
+table.AdminTable {
+  text-align: center;
+    margin:0 auto;
+    width: 80vw;
+    background-color:  #f2b9a1;
+    border-collapse: collapse;
+    border-width: 2px;
+ 
+    border-style: solid;
+    color: #000000;
+  }
+
+  
+  table.AdminTable td, table.AdminTable th {
+    border-width: 2px;
+
+    border-style: solid;
+    padding: 5px;
+  }
+  table.AdminTable th{
+    color: white;
+    border-color: #000000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  table.AdminTable thead {
+    background-color: #f2b9a1;
+
+  }
+  table.AdminTable img{
+    width: 60px;
+  }
+  
+  table.AdminTable p{
+    color: grey;
+    font-size: medium;
+  }
+  table.AdminTable a img{
+        width: 40px;
+  }

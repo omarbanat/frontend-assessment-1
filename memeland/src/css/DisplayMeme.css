@@ -1,0 +1,91 @@
+
+.Meme-Image{
+  width: 70%;
+  height:70%;
+}
+.Meme-container{
+ 
+ height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding-bottom:5%;
+}
+.Meme-content h1{
+  overflow-y: hidden;
+}
+
+.Meme-content{
+  text-align: left; 
+    width: 35%;
+    padding-top: 5%;
+}
+.Meme-content div {
+  width: 485px;
+  margin-right: 150px;
+  }
+.Meme_Question_P{
+  color:#00C3C9;
+  justify-self: center;
+  align-self: center;
+}
+
+.MemeImageContainer{
+max-width: 400px;
+max-height: 400px;
+flex:1;
+}
+.Meme-link{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 480px){
+  .Meme-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: initial;
+  }
+  .Meme-Image{
+      width:100%;
+      margin-right: 0px;
+  }
+  .Meme_Question_P{
+      margin-right: 10px;
+  }
+  
+  .Meme-content div{
+      margin-right: 0px;
+  }
+
+  .Meme-content {
+    width:300px
+  }
+  .Meme-content {
+    font-size: small;
+  }
+  .Meme_P{
+    width:295px
+  
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+ 
+  .Meme-girl{
+      width:50%;
+      margin-right: 0px;
+      margin-left: 150px;
+  }
+  .Meme-content div p{
+      font-size: x-large;
+  }
+  .Meme_Question_P{
+font-size: x-large;    }
+
+}
