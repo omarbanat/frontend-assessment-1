@@ -1,0 +1,14 @@
+.main-content {
+    padding: 15px;
+    position: absolute;
+    top: 9rem;
+    left: 17rem;
+    /* width: 80vw; */
+}
+
+.main-header{
+    position: absolute;
+    /* top: 15rem; */
+    right: 10px;
+    width: 78%;
+}
