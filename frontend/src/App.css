@@ -40,11 +40,16 @@ hr{
 }
 
 .memes-container{
+  display: flex;
   margin-top: 10px;
   margin-left: 10px;
   color:black;
+  gap:10px;
+
+}
+.meme-rectangle{
   background-color: white;
   width:500px;
-  height:700px;
+  height:200px;
 }
 
