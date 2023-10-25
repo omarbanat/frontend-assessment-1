@@ -1,0 +1,50 @@
+body{
+background-color: #1384E8;
+}
+.buttons123{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-top:30px;
+#root{
+  overflow: hidden;
+}
+}
+.buttons123 button{
+  background-color: #13C8E8;
+  border-radius: 10px;
+  margin-top:70px;
+}
+h1{
+  text-align: center;
+}
+hr{
+  width: 1530px;
+  border: 1px solid #6AD8FC;
+  margin-top: 200px;
+}
+.header{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+  background-color: #64ccc5;
+  opacity: 87%;
+  left: 0px;
+  top: 0px;
+  gap: 300px;
+}
+.header h1{
+  margin-left: 1%;
+}
+
+.memes-container{
+  margin-top: 10px;
+  margin-left: 10px;
+  color:black;
+  background-color: white;
+  width:500px;
+  height:700px;
+}
+

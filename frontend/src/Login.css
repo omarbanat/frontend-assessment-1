@@ -1,0 +1,44 @@
+body{
+    background-color: #1384E8;
+}
+.white-block{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 600px;
+    width:500px;
+    height:750px;
+    border-radius: 15px;
+}
+
+.white-block h2{
+    color: grey;
+    font-size: medium;
+    margin-left: 110px;
+}
+input{
+    margin-left: 30px;  
+    width: 250px;
+    height:35px;
+    border-radius: 15px;
+    background-color: rgb(157, 150, 150);
+}
+.login-btn{
+    margin-top:20px;
+    margin-left: 120px;  
+    width: 250px;
+    height:35px;
+    border-radius: 15px;  
+    background-color: rgb(157, 150, 150);
+}
+
+.ensemble{
+    display: flex;
+    flex-direction: row;
+}
+.titles{
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
