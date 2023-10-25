@@ -77,7 +77,7 @@ function Dashboard() {
               body: JSON.stringify({
                 imageUrl: imageUrl,
                 caption: caption,
-                username:"mhmd123"
+                username:name
               }),
             });
           
@@ -124,7 +124,6 @@ function Dashboard() {
           }
           try {
             const response2 = axios.post(`http://localhost:5000/memes/add`,newMeme,  {
-            
               headers: {
                 'Content-Type': 'application/json',
               },
@@ -187,13 +186,11 @@ function Dashboard() {
             }
             <div>
             
-            <div className='meme' style={{display:"flex",flexDirection:"column",
-                            alignItems:"center",gap:"50px",justifyContent:"center"}}>
-                                
-                                <label htmlFor="">choose image<input type="file" onChange={(e) =>setImage(e.target.files[0]) } /></label>
-                                <label htmlFor="">add caption<input type="text" onChange={(e) =>setCaption(e.target.value) } /></label>
-                                <button onClick={handleAdd}>add meme</button>
-                            
+            <div className='add-meme' >  
+                    <h2>Add meme here</h2>                   
+                    <label htmlFor="">choose image</label><input type="file" onChange={(e) =>setImage(e.target.files[0]) } />
+                    <label htmlFor="">add caption</label><input type="text" onChange={(e) =>setCaption(e.target.value) } />
+                    <button onClick={handleAdd}>add meme</button>
             </div>
             </div>
         </main>

@@ -2,15 +2,27 @@
   margin: 0;
   padding: 0;
 }
-.register ul{
+.register ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  margin-bottom: 50px;
+  list-style-type: none; 
+}
+
+.register li::before {
+  content: "\2022"; 
+  color: #1443ED; 
+  margin-right: 5px; 
+  font-size: 30px;
+}
+
+.register li {
+  color: black;
 }
 .register-container{
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 .label{
   display: flex;
@@ -22,9 +34,33 @@
 .register{
   display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-left: 5%;
+  margin-top: 4%;
   width: 100%;
+  
+}
+.register input{
+  height: 30px;
+  border: 2px solid #1443ED;
+}
+.register label{
+  font-weight: 500;
+  font-size: 17px;
+}
+.register button{
+  font-weight: 500;
+  font-size: 17px;
+  width: 110px;
+  height: 50px;
+  background-color: #1443ED;
+  color: white;
+  border: 1px solid white;
+}
+.register button:hover{
+  background-color: black;
+  color: white;
+  border: 5px solid #1443ED;
+  cursor: pointer;
 }
 /* home pages style */
 .home-header{
@@ -75,7 +111,23 @@ img{
   border-top-right-radius: 12%;
   border-top-left-radius: 12%;
 }
-
+.add-meme{
+  width: 250px;
+  height: 250px;
+  background-color: rgb(212, 207, 207);
+  border: 2px solid #1443ED;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 10px;
+}
 
 
 /* Add this to your App.css or a separate CSS file */

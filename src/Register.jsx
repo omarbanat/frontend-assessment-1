@@ -4,7 +4,7 @@ import axios from 'axios';
 import './App.css';
 import register from './images/register.jpg';
 function Register() {
-    
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -28,6 +28,7 @@ function Register() {
           })
           .then((response)=>{
             console.log(response.data);
+            navigate('/login');
           })
           .catch((error)=>{
             console.error(error);
@@ -37,13 +38,12 @@ function Register() {
    <div className='register-container'>
     <img src={register} alt="" />
     <div className='register'>
-        
             <ul>
-                <li>___________</li>
-                <li>___________</li>
-                <li>___________</li>
-                <li>___________</li>
-                <li></li>
+                <li> ____________</li>
+                <li> ____________</li>
+                <li> ____________</li>
+                <li> ____________</li>
+                <li> </li>
             </ul>
           
             <h1>Let's get started</h1>

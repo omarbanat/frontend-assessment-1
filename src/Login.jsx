@@ -22,7 +22,7 @@ function Login() {
             if(response.data.data.role.toLowerCase()==="user"){
               navigate('/home');
             }
-            else{
+            else if(response.data.data.role.toLowerCase()==="meme creator"){
               navigate(`/dashboard?name=${response.data.data.username}`);
             }
           })
@@ -43,7 +43,7 @@ function Login() {
                 <li></li>
             </ul>
           
-            <h1>Login</h1>
+            <h1 style={{marginBottom:"30px"}}>Login</h1>
             <form action="" onSubmit={handleLoginClick}>
                 <label htmlFor="Email">Email<br/><br/><input type="email" style={{width:"386px"}} onChange={(e)=>{setEmail(e.target.value)}}  /></label>
                 <div className="label">

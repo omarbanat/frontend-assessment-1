@@ -1,7 +1,10 @@
 import {React,useState,useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
-import register from './images/register.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faTiktok , faFacebook} from '@fortawesome/free-brands-svg-icons';
+
+
 function Home() {
     const [render,setRender]=useState(true);
     const [Memes,setMemes]=useState([]);
@@ -47,7 +50,7 @@ function Home() {
                                 <img src={selectedMeme.imageUrl} alt='image' />
                                 <p>Caption: {meme.caption}<br/>
                                    Created by: {selectedMeme.creator}<br/>
-                                   Created at: {selectedMeme.createdAt.substring(0,selectedMeme.createdAt.indexOf('T'))}
+                                   Created on: {selectedMeme.createdAt.substring(0,selectedMeme.createdAt.indexOf('T'))}
                                 </p>
                             </div>
                         </div>
@@ -57,8 +60,12 @@ function Home() {
             }
         </main>
         <footer className='home-footer'>
-            <h2>always check our social media to stay up to date</h2>
-            <div></div>
+            <h2>always check our social media to see our new memes</h2>
+            <div className='icons'>
+            <FontAwesomeIcon icon={faInstagram} style={{color: "#ffffff",fontSize:"35px"}} />
+            <FontAwesomeIcon icon={faTiktok} style={{color: "#ffffff", fontSize:"35px"}} />
+            <FontAwesomeIcon icon={faFacebook} style={{color: "#ffffff", fontSize:"35px"}} />
+            </div>
         </footer>
    </div>
   );
