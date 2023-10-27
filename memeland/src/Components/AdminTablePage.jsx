@@ -1,11 +1,52 @@
 import React, { useEffect, useState } from "react";
 import "../css/AdminTablePage.css";
+import AdminAddMeme from "./AdminAddMeme";
 
 const AdminTablePage = () => {
   const [memes, setMemes] = useState([]);
   const [selectedMeme, setSelectedMeme] = useState(null);
   const [updatedCaption, setUpdatedCaption] = useState("");
   const userId = localStorage.getItem("userId");
+  const [image, setImage] = useState(null);
+  const [caption, setCaption] = useState("");
+
+  const handleImageChange = (e) => {
+    setImage(e.target.files[0]);
+  };
+
+  const handleCaptionChange = (e) => {
+    setCaption(e.target.value);
+  };
+
+
+  const handleAddMeme = async () => {
+    const userId = localStorage.getItem("userId"); 
+
+  
+    const formData = new FormData();
+    formData.append("image", image);
+    formData.append("textCaption", caption);
+    formData.append("user_id", userId);
+
+    try {
+      const response = await fetch("http://localhost:5000/meme/add", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert("Meme added successfully");
+        setImage(null);
+        setCaption("");
+      } else {
+        const data = await response.json();
+        alert("Failed to add meme: " + data.message);
+      }
+    } catch (error) {
+      console.error("Error adding meme: ", error);
+    }
+  };
+
 
   useEffect(() => {
     fetch("http://localhost:5000/meme/getAll")
@@ -17,7 +58,7 @@ const AdminTablePage = () => {
         }
       })
       .catch((error) => console.error("Error fetching data: ", error));
-  }, [userId]);
+  }, [userId, handleAddMeme]);
 
   const handleEditMeme = (meme) => {
     setSelectedMeme(meme);
@@ -71,6 +112,7 @@ const AdminTablePage = () => {
     setUpdatedCaption("");
   };
 
+  
   return (
     <div className="AdminTablePage">
       <table className="AdminTable">
@@ -115,6 +157,15 @@ const AdminTablePage = () => {
           ))}
         </tbody>
       </table>
+      <AdminAddMeme
+      handleImageChange = {handleImageChange}
+      handleCaptionChange = {handleCaptionChange}
+      handleAddMeme = {handleAddMeme}
+      caption = {caption}
+
+
+       
+      />
     </div>
   );
 };

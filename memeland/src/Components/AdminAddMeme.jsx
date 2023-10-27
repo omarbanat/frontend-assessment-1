@@ -1,45 +1,8 @@
 import React, { useState } from "react";
 import "../css/AdminAddMeme.css";
 
-const AdminAddMeme = () => {
-  const [image, setImage] = useState(null);
-  const [caption, setCaption] = useState("");
-
-  const handleImageChange = (e) => {
-    setImage(e.target.files[0]);
-  };
-
-  const handleCaptionChange = (e) => {
-    setCaption(e.target.value);
-  };
-
-  const handleAddMeme = async () => {
-    const userId = localStorage.getItem("userId"); 
-
+const AdminAddMeme = ({handleAddMeme, handleImageChange, handleCaptionChange, caption }) => {
   
-    const formData = new FormData();
-    formData.append("image", image);
-    formData.append("textCaption", caption);
-    formData.append("user_id", userId);
-
-    try {
-      const response = await fetch("http://localhost:5000/meme/add", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (response.ok) {
-        alert("Meme added successfully");
-        setImage(null);
-        setCaption("");
-      } else {
-        const data = await response.json();
-        alert("Failed to add meme: " + data.message);
-      }
-    } catch (error) {
-      console.error("Error adding meme: ", error);
-    }
-  };
 
   return (
     <div className="AdminContainer">

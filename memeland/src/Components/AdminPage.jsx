@@ -8,7 +8,7 @@ const AdminPage = () => {
     <div>
       <AdminTopPage />
       <AdminTablePage/>
-      <AdminAddMeme />
+      {/* <AdminAddMeme /> */}
     </div>
   );
 };
